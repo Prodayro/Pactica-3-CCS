@@ -1,0 +1,85 @@
+
+        /* ejercicio de caja*/
+        .caja {
+            /* propiedades especiales que se heredan*/
+            font-size: 20px;
+            color: red;
+
+            color: rgba(38, 18, 150, 0.445);
+            outline: 1px solid red;
+            height: 100px;
+            width: 100%;
+            border: 5px solid orange;
+            padding: 50px;
+            margin: 50px;  
+        }
+
+        header > nav > a {
+            font-size: 50px
+        }
+        aside a {
+            color: green;
+        }
+
+        /*compartir propiedad css */
+        h2, .texto-centrado{
+            text-align: center;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .texto-grande {
+            font-size: 60px;
+            color: blue;
+        }
+
+        #texto-pequeño {
+            font-size:  10xp;
+            color: yellow;
+        }
+
+        /*estilizar textos */
+        .alineacion {
+            /*alineacion a la izquier */
+             /*text-align: left;*/
+
+             /*alineacion al centro */
+             /*text-align: center;*/
+
+             /*alineacion a la derecha */
+             /*text-align: right;*/
+
+             /*justificar textos */
+            text-align: justify;
+            
+        }
+
+        .tamaños {
+            /* tamaño por defecto */
+            /* font-size: 16px;*/
+            font-size: 100xp;
+        }
+
+        .decoraciones {
+            /*subrayado */
+            /*text-decoration: underline; */
+            text-decoration: line-through;
+        }
+
+        .quitar-subrayado {
+            text-decoration: unset;
+        }
+
+        .transformaciones {
+            /* primera letr de cada palabra en mayuscula */
+            /* text-transform: capitalize; */
+
+            /*todo en mayuscula */
+            /*text-trnsform: uppercase; */
+
+            /*todo minusculas */
+            text-transform: lowercase;
+
+        }

@@ -1,4 +1,9 @@
 
+        body {
+            font-family: "Roboto"; BoldItalic;
+            font-weight: 400;
+            font-style: normal;
+        }
         /* ejercicio de caja*/
         .caja {
             /* propiedades especiales que se heredan*/
@@ -83,3 +88,46 @@
             text-transform: lowercase;
 
         }
+
+        .espaciado-de-textos {
+            /* modifica es espacio entre cada linea de texto */
+            line-height: 25px;
+            /* espaciado entre letras */
+            letter-spacing: 3px;
+            /* espaciado entre palabras*/
+            word-spacing: 20px;
+             
+        }
+
+        .grosor-letra {
+            /* el valor del grosor se puede manejar en un rango de 0 a 900, va de 100 en 100 */
+            font-weight: lighter;
+        }
+        .posicion-caja-1, .posicion-caja-2, .posicion-caja-3 {
+            height: 100px;
+            width: 100px;
+            border: 3px solid blue;
+            margin: 20px;
+
+        }
+ .posicion-caja-1{
+    /*el movimiento va a ser relativo a su posicion original*/
+            position: relative;
+            left: 40px;
+            bottom: 50px;
+        }
+ .posicion-caja-2 {
+    /*el elemento pierde su posicion */
+    /*y lo podemos mover en relacion al elemento padre que tenga un relative */
+        position: absolute;
+        border-color: blueviolet;
+        bottom: 0;
+        right: 0;
+    }
+
+ .posicion-caja-3{
+    position:fixed;
+    top: 0;
+    left: 0;
+    
+ }

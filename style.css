@@ -17,7 +17,7 @@ body {
         padding: 50px;
         margin: 50px;  
         }
-
+    /* ejercicio de selectores */
     header > nav > a {
         font-size: 50px
         }

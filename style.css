@@ -103,7 +103,7 @@ body {
      /* el valor del grosor se puede manejar en un rango de 0 a 900, va de 100 en 100 */
             font-weight: lighter;
         }
-    .posicion-caja-1, .posicion-caja-2, .posicion-caja-3 .posicion-caja-4 {
+    .posicion-caja-1, .posicion-caja-2, .posicion-caja-3 {
             height: 100px;
             width: 100px;
             border: 3px solid blue;
@@ -119,8 +119,7 @@ body {
 
     .caja-padre {
             position: relative;
-            border: 2xp red solid;
-        }
+            border: 2xp red solid; }
     .posicion-caja-2 {
      /*el elemento pierde su posicion */
      /*y lo podemos mover en relacion al elemento padre que tenga un relative */
@@ -137,11 +136,6 @@ body {
             left: 0;
     
         }
-
-    .posicion-caja-4 {
-            position: sticky;
-            top: 0;
-        }
     
     .perro-imagen{
             width: 100px;
@@ -150,7 +144,7 @@ body {
     .cuadricula {
         outline: 1px solid blue;
         display: grid;
-        height: 1000px;
+        height: 500px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 2fr 1fr 1f 1fr;
         justify-items: flex-end ;
@@ -167,9 +161,9 @@ body {
 
     .caja-distribución {
      /* unidad: vh -> view height */
-     /*        vh -> view width */
+     /*        vw -> view width */
         border: 1px solid blue;
-        height: 100px;
+        height: 100vh;
         display: flex;
      /* centrar */
      /* justify-content: center; */
@@ -182,10 +176,11 @@ body {
     }
 
     .caja-distribución div {
-        height: 50px;
+        height: 20px;
         width: 50px;
         border: 1px solid red;
         color:aqua;
+        margin: 20px;
 
     }
 
@@ -202,9 +197,9 @@ body {
         cursor: pointer;
      /* trasiciones */
         transition: 
-        padding 2s, 
-        background-color 2s,
-        color 2s;
+            padding 2s, 
+            background-color 2s,
+            color 2s;
         font-size: 2s;
     } 
 
@@ -222,7 +217,7 @@ body {
         height: 100px;
         width: 100px;
         background-color: aqua;
-        animation: mover-derecha 4s linear infinite alternate;
+        animation: mover-derecha 4s linear infinite alternate-reverse;
     }
 
      /*keyframes*/

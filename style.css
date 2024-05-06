@@ -234,6 +234,7 @@ body {
         100%{
         top: 0;
         background-color: blueviolet;
+
         }
     }
 
@@ -245,15 +246,32 @@ body {
      */
 
     .tranformacion {
-        display: inline;
+        display: block;
         margin: auto;
+        transition: transform 1s;
     }
 
     .transformacion:hover{
+        /* escalar el elemento */
         transform: scale(1.2);
         /* rotar elemento */
         /* transform: translate(-180deg); */
-        transform: translate(0px, -100%);
-
+        /* transladar el elemento en el eje x,y */
+        /* transform: translate(0px, -100%); */
     }
-    @keyframes aparecer { }
+
+    .titulo-animado{
+        text-align:  center;
+        animation: aparecer 2s linear forwards;
+    }
+
+
+    @keyframes aparecer {
+        from{
+            transform: translate(( -1000px, 0px));
+        }
+
+        to{
+            transform: translate(0px, 0px);
+        }
+     }

@@ -1,33 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
 
-        body {
-            font-family: "Roboto"; 
-            font-weight: 400;
-            font-style: normal;
-        }
-        /* ejercicio de caja*/
-        .caja {
-            /* propiedades especiales que se heredan*/
-            font-size: 20px;
-            color: red;
-
-            color: rgba(38, 18, 150, 0.445);
-            outline: 1px solid red;
-            height: 100px;
-            width: 100%;
-            border: 5px solid orange;
-            padding: 50px;
-            margin: 50px;  
-        }
-
-        header > nav > a {
-            font-size: 50px
-        }
-        aside a {
-            color: green;
+     /* ejercicio de caja*/
+    .caja {
+     /* propiedades especiales que se heredan*/
+        font-size: 20px;
+        color: red;
+        color: rgba(38, 18, 150, 0.445);
+        outline: 1px solid red;
+        height: 100px;
+        width: 100%;
+        border: 5px solid orange;
+        padding: 50px;
+        margin: 50px;  
         }
 
-        /*compartir propiedad css */
-        h2, .texto-centrado{
+    header > nav > a {
+        font-size: 50px
+        }
+
+    aside a {
+        color: green;
+        }
+
+     /*compartir propiedad css */
+    h2, .texto-centrado{
             text-align: center;
         }
 
@@ -35,99 +35,230 @@
             color: red;
         }
 
-        .texto-grande {
+    .texto-grande {
             font-size: 60px;
             color: blue;
         }
 
-        #texto-pequeño {
+    #texto-pequeño {
             font-size:  10xp;
             color: yellow;
         }
 
-        /*estilizar textos */
-        .alineacion {
-            /*alineacion a la izquier */
-             /*text-align: left;*/
+     /*estilizar textos */
+    .alineacion {
+     /*alineacion a la izquier */
+     /*text-align: left;*/
 
-             /*alineacion al centro */
-             /*text-align: center;*/
+     /*alineacion al centro */
+     /*text-align: center;*/
 
-             /*alineacion a la derecha */
-             /*text-align: right;*/
+     /*alineacion a la derecha */
+     /*text-align: right;*/
 
-             /*justificar textos */
+     /*justificar textos */
             text-align: justify;
             
         }
 
-        .tamaños {
-            /* tamaño por defecto */
-            /* font-size: 16px;*/
+    .tamaños {
+     /* tamaño por defecto */
+     /* font-size: 16px;*/
             font-size: 100xp;
         }
 
-        .decoraciones {
-            /*subrayado */
-            /*text-decoration: underline; */
+    .decoraciones {
+     /*subrayado */
+     /*text-decoration: underline; */
             text-decoration: line-through;
         }
 
-        .quitar-subrayado {
+    .quitar-subrayado {
             text-decoration: unset;
         }
 
-        .transformaciones {
-            /* primera letr de cada palabra en mayuscula */
-            /* text-transform: capitalize; */
+    .transformaciones {
+     /* primera letra de cada palabra en mayuscula */
+     /* text-transform: capitalize; */
 
-            /*todo en mayuscula */
-            /*text-trnsform: uppercase; */
+     /*todo en mayuscula */
+     /*text-trnsform: uppercase; */
 
-            /*todo minusculas */
+     /*todo minusculas */
             text-transform: lowercase;
 
         }
 
-        .espaciado-de-textos {
-            /* modifica es espacio entre cada linea de texto */
+    .espaciado-de-textos {
+     /* modifica es espacio entre cada linea de texto */
             line-height: 25px;
-            /* espaciado entre letras */
+     /* espaciado entre letras */
             letter-spacing: 3px;
-            /* espaciado entre palabras*/
+     /* espaciado entre palabras*/
             word-spacing: 20px;
              
         }
 
-        .grosor-letra {
-            /* el valor del grosor se puede manejar en un rango de 0 a 900, va de 100 en 100 */
+    .grosor-letra {
+     /* el valor del grosor se puede manejar en un rango de 0 a 900, va de 100 en 100 */
             font-weight: lighter;
         }
-        .posicion-caja-1, .posicion-caja-2, .posicion-caja-3 {
+    .posicion-caja-1, .posicion-caja-2, .posicion-caja-3 .posicion-caja-4 {
             height: 100px;
             width: 100px;
             border: 3px solid blue;
             margin: 20px;
 
         }
- .posicion-caja-1{
-    /*el movimiento va a ser relativo a su posicion original*/
+    .posicion-caja-1 {
+     /*el movimiento va a ser relativo a su posicion original*/
             position: relative;
-            left: 40px;
+            left: 50px;
             bottom: 50px;
         }
- .posicion-caja-2 {
-    /*el elemento pierde su posicion */
-    /*y lo podemos mover en relacion al elemento padre que tenga un relative */
-        position: absolute;
-        border-color: blueviolet;
-        bottom: 0;
-        right: 0;
+
+    .caja-padre {
+            position: relative;
+            border: 2xp red solid;
+        }
+    .posicion-caja-2 {
+     /*el elemento pierde su posicion */
+     /*y lo podemos mover en relacion al elemento padre que tenga un relative */
+            position: absolute;
+            border-color: blueviolet;
+            bottom: 0;
+            right: 0;
+        }
+
+    .posicion-caja-3{
+     /* position:fixed; queda la caja fija donde quiera que vallamos de la pantalla ahi estara fijo*/
+            position:fixed;
+            top: 0;
+            left: 0;
+    
+        }
+
+    .posicion-caja-4 {
+            position: sticky;
+            top: 0;
+        }
+    
+    .perro-imagen{
+            width: 100px;
+        }
+
+    .cuadricula {
+        outline: 1px solid blue;
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1f 1fr;
+        justify-items: flex-end ;
+        align-items: flex-start;
+        }
+
+    .uno {
+        object-fit: cover;
+        grid-column: 1/3;
+        grid-row: 1/4;
+        height: 100%;
+        justify-self:center;
+        }
+
+    .caja-distribución {
+     /* unidad: vh -> view height */
+     /*        vh -> view width */
+        border: 1px solid blue;
+        height: 100px;
+        display: flex;
+     /* centrar */
+     /* justify-content: center; */
+
+     /* ajustar el mismo espacio entre los elementos */
+     /* justify-content: space-between */
+
+     /* ajusta espacio*/
+        justify-content: space-around;
     }
 
- .posicion-caja-3{
-    position:fixed;
-    top: 0;
-    left: 0;
-    
- }
+    .caja-distribución div {
+        height: 50px;
+        width: 50px;
+        border: 1px solid red;
+        color:aqua;
+
+    }
+
+    .boton-animado {
+
+        padding: 10px;
+        border: none;
+     /* modifica el fondo del elemento */
+        background: rgb(5, 5, 56);
+        color: white;
+     /* redondear esquinas */
+        border-radius: 5px;
+     /* para modificar el cursor */
+        cursor: pointer;
+     /* trasiciones */
+        transition: 
+        padding 2s, 
+        background-color 2s,
+        color 2s;
+        font-size: 2s;
+    } 
+
+     /* pseudo-clase */
+    .boton-animado:hover {
+        padding: 50px;
+        background-color: rgb(70, 15, 15);
+        color: rgb(222, 222, 76);
+        font-size: 30px;
+    }
+
+    .caja-animada {
+        left: 0px;
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        animation: mover-derecha 4s linear infinite alternate;
+    }
+
+     /*keyframes*/
+
+    @keyframes mover-derecha {
+        0%{
+        top: 0px;
+        left: 0px;
+        background-color: aqua;
+        }
+        50% {
+        top: 50px;
+        }
+        100%{
+        top: 0;
+        background-color: blueviolet;
+        }
+    }
+
+     /* las etiquetas inline por defecto son:
+     - button
+     -input
+     - img
+     -span
+     */
+
+    .tranformacion {
+        display: inline;
+        margin: auto;
+    }
+
+    .transformacion:hover{
+        transform: scale(1.2);
+        /* rotar elemento */
+        /* transform: translate(-180deg); */
+        transform: translate(0px, -100%);
+
+    }
+    @keyframes aparecer { }
